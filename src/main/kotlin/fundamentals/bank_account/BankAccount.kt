@@ -1,13 +1,4 @@
-package fundamentals
-
-fun main(){
-    val account1 = BankAccount(10.0,"Luis")
-
-    print(account1.getBalanceMessage())
-    account1.setBalance()
-
-
-}
+package fundamentals.bank_account
 class BankAccount(private var balance: Double, private val holder: String) {
 
     fun getBalance() : Double{

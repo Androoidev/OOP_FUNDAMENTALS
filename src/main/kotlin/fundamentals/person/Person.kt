@@ -1,18 +1,7 @@
-package fundamentals
+package fundamentals.person
 
 // This program defines a 'Person' class that allows creating person objects with their name, age, and gender.
 // It provides functionality to update the person's name via the setName() function after prompting the user for input.
-
-fun main(){
-    // Creating Person objects
-    val person1 = Person("Luis", 26,'M')
-    val person2 = Person("Jazmin", 31, 'F')
-    // Gender not provided, so the default value 'X' will be used for the gender
-    val personGenderDefault = Person("Ariel", 43)
-
-    // Call setName() for person1
-    person1.setName()
-}
 
 class Person(
     // Primary Constructor
