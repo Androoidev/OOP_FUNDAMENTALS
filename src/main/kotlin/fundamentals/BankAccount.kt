@@ -1,16 +1,21 @@
 package fundamentals
 
 fun main(){
-
     val account1 = BankAccount(10.0,"Luis")
 
+    print(account1.getBalanceMessage())
     account1.setBalance()
+
 
 }
 class BankAccount(private var balance: Double, private val holder: String) {
 
     fun getBalance() : Double{
         return balance
+    }
+
+    fun getBalanceMessage() : String {
+        return "\nHEY, ${holder.uppercase()}, YOUR AVAILABLE BALANCE IS: $balance\n"
     }
 
     fun setBalance(){
@@ -40,9 +45,6 @@ class BankAccount(private var balance: Double, private val holder: String) {
                 else -> println("INVALID OPTION. PLEASE TRY AGAIN")
             }
         }
-
-
-
     }
 
     fun depositMoney(){
@@ -53,7 +55,7 @@ class BankAccount(private var balance: Double, private val holder: String) {
             balance += amount
             println("YOU HAVE ADDED $$amount. AVAILABLE BALANCE: $$balance")
         } else {
-            println("INVALID AMOUNT. MUST BE MORE THAN $0")
+            println("INVALID AMOUNT. MUST BE MORE THAN $0\n")
         }
     }
 
@@ -64,12 +66,12 @@ class BankAccount(private var balance: Double, private val holder: String) {
         if (amount != null && amount > 0){
             if (amount <= balance){
                 balance -= amount
-                println("YOU HAVE WITHDRAWED $$amount. REMAINING BALANCE: $$balance ")
+                println("\nYOU HAVE WITHDRAWED $$amount. REMAINING BALANCE: $$balance\n")
             } else {
-                println("INSUFFICIENT FUNDS TO WITHDRAW THIS AMOUNT")
+                println("INSUFFICIENT FUNDS TO WITHDRAW THIS AMOUNT\n")
             }
         } else {
-            println("INVALID AMOUNT. MUST BE OVER $0")
+            println("INVALID AMOUNT. MUST BE OVER $0\n")
         }
 
     }
