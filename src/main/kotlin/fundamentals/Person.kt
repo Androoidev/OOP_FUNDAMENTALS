@@ -1,10 +1,17 @@
 package fundamentals
 
+// This program defines a 'Person' class that allows creating person objects with their name, age, and gender.
+// It provides functionality to update the person's name via the setName() function after prompting the user for input.
+
 fun main(){
+    // Creating Person objects
     val person1 = Person("Luis", 26,'M')
     val person2 = Person("Jazmin", 31, 'F')
-    // Gender no provided
+    // Gender not provided, so the default value 'X' will be used for the gender
     val personGenderDefault = Person("Ariel", 43)
+
+    // Call setName() for person1
+    person1.setName()
 }
 
 class Person(
@@ -13,22 +20,27 @@ class Person(
     private val age: Int,
     private val gender: Char = 'X' // Default Value
 ) {
+
+    // Initializes the class with a message with the added person's data
     init {
         println("Person named $name, age $age and gender $gender has been added.")
     }
 
-
+    // Changes the person's name
     fun setName(){
-        print("Enter your new name: ")
+        print("Enter your new name $name: ")
+        // Read input from the user and assign it to newName if it is not null and not blank
         val newName = readlnOrNull()?.takeIf { it.isNotBlank() }
 
+        // Check if the newName is not null and not the same as the current name
         if (newName != null && newName != name){
+            // If valid, update the name and notify the user
             name = newName
             println("Name updated succesfully!")
+
+            // If the newName is null or the same as the current name, no change is made
         } else{
             println("Invalid or same name entered. No changes made.")
         }
     }
-
-
 }
