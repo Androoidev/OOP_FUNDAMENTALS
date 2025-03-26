@@ -1,0 +1,1 @@
+# 🛠 Enum Class: Defining Constant Values

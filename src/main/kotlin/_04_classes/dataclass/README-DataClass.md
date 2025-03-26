@@ -1,0 +1,1 @@
+# 📊 Data Class: Simplifying Data Handling
