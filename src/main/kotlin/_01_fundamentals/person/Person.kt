@@ -1,4 +1,4 @@
-package fundamentals.person
+package _01_fundamentals.person
 
 // This program defines a 'Person' class that allows creating person objects with their name, age, and gender.
 // It provides functionality to update the person's name via the setName() function after prompting the user for input.

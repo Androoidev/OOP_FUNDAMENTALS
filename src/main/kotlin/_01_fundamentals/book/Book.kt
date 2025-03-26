@@ -1,4 +1,4 @@
-package fundamentals.book
+package _01_fundamentals.book
 class Book (
     val title: String,
     val author: String,

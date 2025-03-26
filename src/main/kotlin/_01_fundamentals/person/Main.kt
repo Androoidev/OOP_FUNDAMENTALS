@@ -1,4 +1,4 @@
-package fundamentals.person
+package _01_fundamentals.person
 
 fun main(){
     // Creating Person objects

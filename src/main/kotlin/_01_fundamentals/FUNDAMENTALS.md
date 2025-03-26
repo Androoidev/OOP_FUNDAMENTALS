@@ -28,23 +28,23 @@ In Kotlin, a class can have:
 **Encapsulation** protects a class’s data and restricts access to its properties. 
 It is achieved using `private`, `protected`, `internal`, and `public`.
 
-### 🔥 Best Practices in OOP (Fundamentals)
+## 🔥 Best Practices in OOP (Fundamentals)
 - ✔️ Use PascalCase for class names (Person, BankAccount).
 - ✔️ Use camelCase for properties (balance, name).
 - ✔️ Avoid unnecessary public variables.
 - ✔️ Use private whenever possible for security.
 - ✔️ Provide methods to modify data instead of direct variable access
 
-### 📂 Files in This Package
+## 📂 Files in This Package
 - 📌 Person.kt: Example of classes, constructors, and methods.
 - 📌 BankAccount.kt: Encapsulation with private, getters, and setters.
 
-### 🚀 Conclusion
-In this module, we covered the fundamentals of OOP in Kotlin, including:
+## 🚀 Conclusion
+In this module, we covered the _01_fundamentals of OOP in Kotlin, including:
 
 - ✅ Classes and objects.
 - ✅ Properties and methods.
 - ✅ Constructors and init.
 - ✅ Encapsulation with getters and setters.
 
-These concepts form the foundation for more advanced topics like **inheritance**, **polymorphism**, and **interfaces**, which we will explore in the next modules.
+These concepts form the foundation for more advanced topics like **_02_inheritance**, **polymorphism**, and **interfaces**, which we will explore in the next modules.

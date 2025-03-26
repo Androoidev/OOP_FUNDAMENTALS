@@ -1,4 +1,4 @@
-package fundamentals.bank_account
+package _01_fundamentals.bank_account
 class BankAccount(private var balance: Double, private val holder: String) {
 
     fun getBalance() : Double{

@@ -1,4 +1,4 @@
-package fundamentals.book
+package _01_fundamentals.book
 
 fun main(){
     val book1 = Book("Lord Of The Rings", "J.R.R. Tolkien",1954, "Fantasy")

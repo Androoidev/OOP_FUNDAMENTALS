@@ -10,7 +10,7 @@ open class Product(val name: String, var price: Double) {
         price *= (1 - discount / 100)
         return price
     }
-    constructor(name: String, price: Double, discount: Double) : this(name, price){
+    constructor(name: String, price: Double, discount: Double) : this(name.uppercase(), price){
         applyDiscount(discount)
     }
 
